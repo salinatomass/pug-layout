@@ -1,0 +1,23 @@
+extend componentes/plantilla.pug
+block contenidos
+  section.intro
+    .intro__imagen: img(src="./static/images/imagen.png", alt="")
+    .intro__contenido
+      h2 #{titulos[0]}
+      p 
+        | Lorem ipsum dolor sit, 
+        | amet consectetur adipisicing 
+        | elit. Illo, dolores eos 
+        | minima magni inventore nihil 
+        | temporibus architecto beatae 
+        | voluptatem nisi? Hic amet 
+        | odit officia repellendus 
+        | blanditiis corrupti at 
+        | dolorum ipsa.
+        span Estamos utilizando interpolacion en Pug
+      a.boton Leer mas
+  main.contenido
+    +caja('imagen.png', titulos[1], 'Lorem ipsum dolor sit amet.')
+    +caja('imagen.png', titulos[2], 'Lorem ipsum dolor sit amet.')
+    +caja('imagen.png', titulos[3], 'Lorem ipsum dolor sit amet.')
+  
